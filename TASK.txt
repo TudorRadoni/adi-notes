@@ -1,0 +1,15 @@
+# EMU
+
+cd /sys/kernel/debug/iio/iio\:device0
+
+echo <addr> <w/r> <value> > direct_reg_access
+
+echo 0x2 0x0 > direct_reg_access // enable the device
+echo 0x0 > direct_reg_access
+
+cat direct_reg_access
+
+# Real device
+
+echo 0x9 0x5A > direct_reg_access
+cat direct_reg_access

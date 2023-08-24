@@ -1,0 +1,6 @@
+*.code-workspace
+
+_docs/*
+!_docs/ADISummerSchool_2023.pdf
+
+.obsidian/
